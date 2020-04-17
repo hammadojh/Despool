@@ -599,6 +599,14 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  section {
+  padding: 0 0;
+  overflow: hidden;
+}
+}
+
 section {
   padding: 100px 0;
   overflow: hidden;
@@ -1323,8 +1331,7 @@ margin-left: 2px;
   background: url("../img/contact-img.png") center center no-repeat;
   background-size: contain;
   min-height: 300px;
-  -webkit-transform: scaleX(2);
-  transform: scaleX(2);
+  margin-bottom: 44px;
 }
 
 .contact .info {
@@ -1469,6 +1476,19 @@ margin-left: 2px;
   100% {
     transform: rotate(360deg);
   }
+}
+
+@media (min-width: 500px){
+  
+  #contact{
+    margin-top: -120px;
+    margin-bottom: -50px;
+  }
+
+  .contact .contact-image {
+    height:700px;
+  }
+
 }
 
 /*--------------------------------------------------------------
